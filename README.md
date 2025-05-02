@@ -1,69 +1,116 @@
-# Welcome to your Lovable project
+# Readmission Forecasting System
 
-## Project info
+A comprehensive healthcare analytics platform that predicts patient readmission risks using machine learning models.
 
-**URL**: https://lovable.dev/projects/021d4b5f-0cfc-42fa-8ef9-0c98e35997e6
+## 🚀 Features
 
-## How can I edit this code?
+- **Patient Data Analysis**: Upload and analyze patient data in real-time
+- **Multiple ML Models**: Support for various machine learning models:
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+  - LightGBM
+  - MLP (Multi-layer Perceptron)
+- **Interactive Dashboard**: Visualize predictions and patient data
+- **Model Comparison**: Compare performance across different models
+- **Data Export**: Export analysis results and predictions
+- **Real-time API**: RESTful API for model predictions and data processing
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+### Frontend
+- **React**: UI framework
+- **TypeScript**: Type-safe JavaScript
+- **Vite**: Next-generation frontend tooling
+- **Tailwind CSS**: Utility-first CSS framework
+- **shadcn/ui**: Beautiful, accessible components
+- **Chart.js**: Interactive data visualization
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/021d4b5f-0cfc-42fa-8ef9-0c98e35997e6) and start prompting.
+### Backend
+- **Python**: Core programming language
+- **Flask**: Web framework
+- **Scikit-learn**: Machine learning library
+- **XGBoost**: Gradient boosting framework
+- **LightGBM**: Lightweight gradient boosting framework
+- **TensorFlow**: Deep learning framework
 
-Changes made via Lovable will be committed automatically to this repo.
+### Infrastructure
+- **Docker**: Containerization
+- **Docker Compose**: Multi-container orchestration
+- **Nginx**: Web server and reverse proxy
+- **Git**: Version control
 
-**Use your preferred IDE**
+## 📋 Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v18 or higher)
+- Python (v3.9 or higher)
+- Docker and Docker Compose
+- Git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Quick Start
 
-Follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd readmission-forecasting
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install dependencies:
+   ```bash
+   # Frontend dependencies
+   npm install
+   
+   # Backend dependencies
+   pip install -r requirements.txt
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Start the development environment:
+   ```bash
+   # Start frontend
+   npm run dev
+   
+   # Start backend
+   python src/api-server-template/app.py
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+For detailed deployment instructions, see [GUIDE.md](GUIDE.md).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📊 Project Structure
+
+```
+readmission-forecasting/
+├── src/
+│   ├── api-server-template/    # Backend API server
+│   ├── components/             # React components
+│   ├── services/              # API services
+│   └── utils/                 # Utility functions
+├── public/                    # Static assets
+├── dist/                      # Build output
+└── docker/                    # Docker configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Configuration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application can be configured through environment variables:
 
-**Use GitHub Codespaces**
+- `VITE_API_URL`: Backend API URL
+- `VITE_CLERK_PUBLISHABLE_KEY`: Authentication key
+- `MODEL_VERSION`: Current model version
+- `DEFAULT_MODEL`: Default model to use
+- `BATCH_SIZE`: Prediction batch size
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🤝 Contributing
 
-## What technologies are used for this project?
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This project is built with .
+## 📝 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## How can I deploy this project?
+## 📞 Support
 
-Simply open [Lovable](https://lovable.dev/projects/021d4b5f-0cfc-42fa-8ef9-0c98e35997e6) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+For support, email support@example.com or join our Slack channel.
